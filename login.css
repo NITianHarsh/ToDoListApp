@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Playpen+Sans&family=Roboto&family=Yellowtail&display=swap');
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body{
+	height: 100vh;
+	width: 100vw;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	font-family: 'Jost', sans-serif;
+	background: url("wallpaperflare.com_wallpaper\ \(1\).jpg");
+	background-position: center;
+	background-size: cover;
+}
+
+.main{
+	width: 380px;
+	height: 500px;
+	overflow: hidden;
+	background:transparent;
+	border-radius: 10px;
+	box-shadow: 5px 20px 50px #000;
+	backdrop-filter: blur(5px) brightness(130%);
+}
+
+.signup{
+	width:100%;
+	height: 100%;
+	backdrop-filter: blur(10px) brightness(150%);
+}
+
+label{
+	/* color: #21ddc7; */
+	color: #F7F7F8;
+	font-family: 'Yellowtail';
+	font-size: 3rem;
+	letter-spacing: 3px;
+	justify-content: center;
+	display: flex;
+	margin: 60px;
+	font-weight: 200;
+	transition: .5s ease-in-out;	
+}
+
+/* label:hover{
+	color: rgb(10, 159, 159);
+	transition: none;
+} */
+
+input{
+	width: 70%;
+	height: 40px;
+	background: #dad7cd;
+	margin: 15px auto;
+	padding: 10px;
+	display: flex;
+	justify-content: center;
+	border: none;
+	outline: none;
+	border-radius: 5px;
+	font-weight: bold;
+}
+
+input::placeholder{
+	font-weight: 400;
+}
+
+button{
+	width: 40%;
+	height: 40px;
+	margin: 10px auto;
+	justify-content: center;
+	display: block;
+	color: black;
+	background-color: #0093E9;
+	background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);
+	font-size: 1.1em;
+	font-weight: bold;
+	margin-top: 20px;
+	outline: none;
+	border: none;
+	border-radius: 20px;
+	transition: .2s ease-in;
+	cursor: pointer;
+}
+
+button:hover{
+	background: rgb(0, 191, 255);
+}
+
+.login{
+	height: 460px;
+	background:white;
+	border-radius: 60% / 10%;
+	transform: translateY(-147px);
+	transition: .8s ease-in-out;
+}
+
+.login label{
+	margin-top: 10px;
+	color: #00008b;
+	transform: scale(.6);
+}
+
+.login label:hover{
+	color: darkcyan;
+}
+
+#chk:checked ~ .login{
+	transform: translateY(-500px);
+    background: rgb(255, 244, 244);
+}
+
+#chk:checked ~ .login label{
+	transform: scale(1);	
+}
+
+#chk:checked ~ .signup label{
+	transform: scale(.6);
+}
+
+#forgot a{
+	text-align: center;
+	font-size: .85rem;
+	margin-left: 7.2rem;
+	text-decoration: none;
+	color: blue;
+}
+
+#forgot a:hover{
+	text-decoration: underline;
+}
+
+.social{
+    margin-top: 30px;
+    display: flex;
+}
+
+.social div{
+	margin-top: 1.7rem;
+    background: whitesmoke;
+    width: 1500px;
+    border-radius: 3px;
+    text-align: center;
+}
+
+.social .fb{
+    margin-left: 25px;
+}
+
+.social i{
+    margin-right: 4px;
+}
+  
