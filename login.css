@@ -35,7 +35,6 @@ body{
 }
 
 label{
-	/* color: #21ddc7; */
 	color: #F7F7F8;
 	font-family: 'Yellowtail';
 	font-size: 3rem;
@@ -46,11 +45,6 @@ label{
 	font-weight: 200;
 	transition: .5s ease-in-out;	
 }
-
-/* label:hover{
-	color: rgb(10, 159, 159);
-	transition: none;
-} */
 
 input{
 	width: 70%;
@@ -102,26 +96,19 @@ button:hover{
 }
 
 .login label{
-	margin-top: 10px;
-	color: #00008b;
-	transform: scale(.6);
+	margin-top: 20px;
+    color: #00008b;
+    transform: scale(0.8);
 }
 
-.login label:hover{
+.login #log:hover{
 	color: darkcyan;
+	font-size: 3rem;
 }
 
-#chk:checked ~ .login{
-	transform: translateY(-500px);
+.login:hover{
+	transform: translateY(-520px);
     background: rgb(255, 244, 244);
-}
-
-#chk:checked ~ .login label{
-	transform: scale(1);	
-}
-
-#chk:checked ~ .signup label{
-	transform: scale(.6);
 }
 
 #forgot a{
@@ -134,6 +121,7 @@ button:hover{
 
 #forgot a:hover{
 	text-decoration: underline;
+	font-weight: bold;
 }
 
 .social{
@@ -142,7 +130,7 @@ button:hover{
 }
 
 .social div{
-	margin-top: 1.7rem;
+	margin-top: 1rem;
     background: whitesmoke;
     width: 1500px;
     border-radius: 3px;
