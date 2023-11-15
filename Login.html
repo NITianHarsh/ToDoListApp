@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="google-signin-client_id" content="610501008941-ut9s1ogq1ikfuogot1rvoji71abf3gm8.apps.googleusercontent.com">
     <title>Login or SignUp here</title>
     <link rel="stylesheet" href="login.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
@@ -29,12 +30,16 @@
 					<button>Login</button>
 
                     <div class="social">
-                        <div class="go"><a href="#" title="Login with google"><i class="fa-brands fa-google fa-bounce fa-xl" style="color: #fb4f3c;"></i></a></div>
-                        <div class="fb"><a href="#" title="Login with facebook"><i class="fa-brands fa-facebook fa-bounce fa-2xl" style="color: #1a63e0;"></i></a></div>
+                        <div class="go">
+							<!-- <a href="#" title="Login with google"><i class="fa-brands fa-google fa-bounce fa-xl" style="color: #fb4f3c;"></i></a> -->
+							<div class="g-signin2" data-width="250" data-height="50" data-longtitle="true"></div>
+						</div>
+                        <div class="fb"><a href="#" title="Login with facebook"><i class="fa-brands fa-facebook fa-static fa-2xl" style="color: #1a63e0;"></i></a></div>
                     </div>
 				</form>
 			</div>
   </div>
-    
+  <script src="login.js"></script>
+  <script src="https://apis.google.com/js/platform.js" async defer></script>
 </body>
 </html>

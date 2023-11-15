@@ -41,7 +41,7 @@ label{
 	letter-spacing: 3px;
 	justify-content: center;
 	display: flex;
-	margin: 60px;
+	margin: 40px;
 	font-weight: 200;
 	transition: .5s ease-in-out;	
 }
@@ -67,7 +67,7 @@ input::placeholder{
 button{
 	width: 40%;
 	height: 40px;
-	margin: 10px auto;
+	margin: 0px auto;
 	justify-content: center;
 	display: block;
 	color: black;
@@ -75,12 +75,15 @@ button{
 	background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);
 	font-size: 1.1em;
 	font-weight: bold;
-	margin-top: 20px;
+	margin-top: 0px;
 	outline: none;
 	border: none;
 	border-radius: 20px;
 	transition: .2s ease-in;
 	cursor: pointer;
+}
+.login button{
+	margin-top: 10px;
 }
 
 button:hover{
@@ -88,7 +91,7 @@ button:hover{
 }
 
 .login{
-	height: 460px;
+	height: 500px;
 	background:white;
 	border-radius: 60% / 10%;
 	transform: translateY(-147px);
@@ -111,20 +114,19 @@ button:hover{
     background: rgb(255, 244, 244);
 }
 
-#forgot a{
+#forgot{
 	text-align: center;
 	font-size: .85rem;
-	margin-left: 7.2rem;
+	margin : 0 8.3rem;
 	text-decoration: none;
-	color: blue;
+	color: gray;
 }
 
 #forgot a:hover{
 	text-decoration: underline;
-	font-weight: bold;
 }
 
-.social{
+/* .social{
     margin-top: 30px;
     display: flex;
 }
@@ -143,5 +145,17 @@ button:hover{
 
 .social i{
     margin-right: 4px;
+} */
+
+.social{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
 }
-  
+.social .g-signin2{
+	margin-top: 20px;
+	margin-left: 68px;
+}
+.social .fb{
+	margin: 30px auto;
+}
